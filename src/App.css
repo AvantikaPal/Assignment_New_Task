@@ -1,0 +1,77 @@
+/* App.css */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    background: white;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    width: 100%;
+    max-width: 400px;
+}
+
+header {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.candidate-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.candidate-info, .edit-form {
+    width: 100%;
+}
+
+.edit-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+button {
+    margin-top: 10px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    opacity: 0.9;
+}
+
+button:focus {
+    outline: none;
+}
+
+button[onClick="onEdit"] {
+    background-color: #007bff;
+    color: white;
+}
+
+button[onClick="handleSave"] {
+    background-color: #28a745;
+    color: white;
+}
+
+button[onClick="onCancel"] {
+    background-color: #dc3545;
+    color: white;
+}
